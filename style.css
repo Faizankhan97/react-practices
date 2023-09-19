@@ -1,0 +1,46 @@
+body {
+  font-family: monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.header .logo a img {
+  width: 90px;
+}
+
+.header .nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.header .nav li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+}
+
+.main {
+  padding: 50px 0;
+}
+
+.main .card {
+  border: 1px solid black;
+  width: 12%;
+  padding: 10px;
+  background-color: #e0e0e0;
+}
+
+.main .row {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.main .card img {
+  width: 100%;
+}

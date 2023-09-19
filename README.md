@@ -10,6 +10,11 @@ JSX is HTML-Like or XML-like syntax
 
 React.createElement => Object => HTMLElment(render)
 
+use map --- {name.map((parameter)=>(JXS tags key={id}))}
+
+Why we use key?
+key is use for unqiue id for cards
+
 # Parcel
 
 - Dev Build
