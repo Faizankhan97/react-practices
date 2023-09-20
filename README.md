@@ -15,6 +15,8 @@ use map --- {name.map((parameter)=>(JXS tags key={id}))}
 Why we use key?
 key is use for unqiue id for cards
 
+React it's self say that never use index as the key (anti-pattern)
+
 # Parcel
 
 - Dev Build
