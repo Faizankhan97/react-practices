@@ -24,23 +24,28 @@ body {
   font-size: 20px;
 }
 
-.main {
+.restur {
   padding: 50px 0;
 }
 
-.main .card {
+.restur .card {
   border: 1px solid black;
-  width: 12%;
+  width: 100%;
   padding: 10px;
   background-color: #e0e0e0;
 }
 
-.main .row {
+.restur .row .col-md-3 {
+  width: 22%;
+  padding: 0 15px;
+}
+
+.restur .row {
   display: flex;
   gap: 9px;
   flex-wrap: wrap;
 }
 
-.main .card img {
+.restur .card img {
   width: 100%;
 }
