@@ -12,10 +12,26 @@ React.createElement => Object => HTMLElment(render)
 
 use map --- {name.map((parameter)=>(JXS tags key={id}))}
 
+git push -f origin master
+
 Why we use key?
 key is use for unqiue id for cards
 
 React it's self say that never use index as the key (anti-pattern)
+
+Two types of Export/Import
+
+Default export is import component from path
+
+Name export is import {comonent} from path
+
+Reconailiation Algorith(React Fiber - v16 of react)
+
+Virtul DOM is representation of an actual DOM
+It's nothing but javascript object
+
+Why is React is fast?
+react is efficient in DOM manipulation because it have virtual dom
 
 # Parcel
 
@@ -36,3 +52,12 @@ React it's self say that never use index as the key (anti-pattern)
 - HTTPs
 - Tree Shaking - remove unused code
 - Different dev and prod bundles
+
+# React Hook
+
+What is Hook?
+Nomral JS utility Function
+useState() - const [] = useState()
+useEffect() - useEffect(()=>{})
+
+whenever a state variable is updates react re-render the component

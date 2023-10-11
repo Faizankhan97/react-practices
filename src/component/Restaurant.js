@@ -1,21 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { CDN_URL } from "../utils/constants";
 
-const Restaurant = ({
-  cloudinaryImageId,
-  name,
-  cuisines,
-  area,
-  lastMileTravelString,
-  costForTwoString,
-  avgRating,
-}) => {
+const Restaurant = (props) => {
+  console.log(props);
   return (
     <div className="card">
       <img src={CDN_URL + cloudinaryImageId} alt="food" />
       <div className="title">
-        <h3>{name}</h3>
-        <span className="dish-menu">{cuisines.join(" , ")}</span>
+        <h3>{label}</h3>
+        <span className="dish-menu">{cuisines?.join(" , ")}</span>
         <p>{area}</p>
         <span className="d-f">
           <h4>{avgRating}</h4>

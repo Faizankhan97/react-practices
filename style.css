@@ -49,3 +49,15 @@ body {
 .restur .card img {
   width: 100%;
 }
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-container .shimmer-card {
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+  background-color: #e0e0e0;
+}
