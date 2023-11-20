@@ -33,6 +33,15 @@ It's nothing but javascript object
 Why is React is fast?
 react is efficient in DOM manipulation because it have virtual dom
 
+Conditional Rendering is rendering on the bases of condition is know as conditional rendering
+
+Whenever state variables update, react triggers a reconciliation cycle (re-renders the component)
+
+# 2 Types of Routing in the web apps
+
+- Client Side Routing: When the hole page is not render in known as client side routing.
+- Server Side Routing: When the hole page will render in known as server side routing.
+
 # Parcel
 
 - Dev Build
