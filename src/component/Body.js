@@ -32,7 +32,6 @@ const Body = () => {
   // if (resData.length === 0) {
   //   return <Shimmer />;
   // }
-  console.log(filteredRest);
   return resData.length === 0 ? (
     <Shimmer />
   ) : (

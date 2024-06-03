@@ -1,0 +1,21 @@
+{
+  "name": "chapter2",
+  "version": "1.0.0",
+  "description": "Chapter 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "keywords": [
+    "Reatc"
+  ],
+  "author": "Faizan Khan",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

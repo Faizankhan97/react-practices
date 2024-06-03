@@ -33,7 +33,7 @@ const RestaurantMenu = () => {
       <h3>{resInfo?.cards[0]?.card?.card?.info?.cuisines.join(" , ")}</h3>
       <h3>{resInfo?.cards[0]?.card?.card?.info?.costForTwoMessage}</h3>
       <ul>
-        {itemCards.map((item) => (
+        {itemCards?.map((item) => (
           <li key={item.card.info}>
             {item.card.info.name}
             {item.card.info.price || item.card.info.defaultPrice}

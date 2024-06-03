@@ -1,3 +1,4 @@
 /node_modules
 /dist
 .parcel-cache
+chapter2/node_modules/
