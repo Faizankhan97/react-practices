@@ -2,3 +2,6 @@
 /dist
 .parcel-cache
 chapter2/node_modules/
+chapter2/dist
+chapter3/node_modules/
+chapter3/dist

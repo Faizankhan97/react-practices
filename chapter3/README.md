@@ -1,0 +1,1 @@
+function that return a jsx code is a functional component 
