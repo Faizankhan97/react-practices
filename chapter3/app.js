@@ -8,7 +8,7 @@ const heading = React.createElement("div", { className: "head" }, [
 ]);
 
 // React Element
-const jsxHeading = <h1>Hello JSX Element Heading</h1>;
+const jsxHeading = (<h1>Hello JSX Element Heading</h1>);
 
 // React Functional Compoenet
 const JsxTitle = () => <h2 className="heading">Hello JSX Title Component</h2>;

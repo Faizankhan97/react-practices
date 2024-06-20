@@ -66,7 +66,14 @@ Whenever state variables update, react triggers a reconciliation cycle (re-rende
 
 What is Hook?
 Nomral JS utility Function
-useState() - const [] = useState()
+useState() - const [] = useState() superpowerful state variables in react
 useEffect() - useEffect(()=>{})
 
 whenever a state variable is updates react re-render the component
+
+Reconciliation algorithm (React Fiber)
+
+virtual dom is a representation of actual dom
+
+Diff algorithm
+
