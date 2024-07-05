@@ -1,0 +1,24 @@
+{
+  "name": "chapter7",
+  "version": "1.0.0",
+  "description": "Chapter7",
+  "main": "App.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build:": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "Faizan khan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.0"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "^2.12.0",
+    "parcel-bundler": "^1.12.5"
+  }
+}
