@@ -68,3 +68,8 @@ body {
   padding: 10px;
   background-color: #e0e0e0;
 }
+
+.user-card {
+  border: 1px solid black;
+  padding: 15px;
+}

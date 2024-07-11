@@ -68,6 +68,9 @@ What is Hook?
 Nomral JS utility Function
 useState() - const [] = useState() superpowerful state variables in react
 useEffect() - useEffect(()=>{})
+if no dependency array => useEffect is called on every render
+if dependency array is empty = [] => useEffect is called on initial render (just once)
+if dependency array is [anything] => called everything anything is updated
 
 whenever a state variable is updates react re-render the component
 
@@ -77,3 +80,10 @@ virtual dom is a representation of actual dom
 
 Diff algorithm
 
+Rendering is base on condition is known as conditional rendering
+
+whenever state variables update, react triggers a reconciliation cycle (re-render the component)
+
+ComponentDidMount is use for API call
+
+componentWillUnmount when we are leaving the page
