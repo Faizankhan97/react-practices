@@ -87,3 +87,5 @@ whenever state variables update, react triggers a reconciliation cycle (re-rende
 ComponentDidMount is use for API call
 
 componentWillUnmount when we are leaving the page
+
+single responsibility principle that even component sholud have one clear responsibility or role.
