@@ -9,7 +9,6 @@ const useRestrauntMenu = (resId) =>{
     const data = await axios.get(MENU_API + resId + "&submitAction=ENTER");
     setResInfo(data?.data?.data);
   };
-
   useEffect(() => {
     fetchMenu();
   }, []);
