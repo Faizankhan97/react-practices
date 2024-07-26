@@ -7,7 +7,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Contact from "./component/Contact";
 import Error from "./component/Error";
 import RestaurtMenu from "./component/RestaurtMenu";
-import UserContext from "./utils/UserContext";
+import UserContext from "./utils/";
 
 // Chunking
 // Code Splitting
