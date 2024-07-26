@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import RestaurantCard, {withPromotedLabel} from "./RestaurantCard";
 import axios from "axios";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const [listOfRestaurant, setListOfRestaurant] = useState([]);
@@ -43,6 +44,8 @@ const Body = () => {
   //   return <Shimmer />;
   // }
 
+  const {loggedInUser, setUserInfo} = useContext(UserContext)
+
   return listOfRestaurant?.length == 0 ? (
     <Shimmer />
   ) : (
@@ -79,6 +82,15 @@ const Body = () => {
             >
               Top Rated Restaurant
             </button>
+          </div>
+          <div className="m-4 p-4 flex items-center">
+            <label className="pr-5">UserName</label>
+            <input
+              type="text"
+              className="border border-solid border-black"
+              value={loggedInUser}
+              onChange={(e) => setUserInfo(e.target.value)}
+            />
           </div>
         </div>
         <div className="flex flex-wrap">

@@ -1,7 +1,7 @@
 import React from 'react'
 import { CDN_URL } from '../utils/constant';
 
-const ItemList = ({ items }) => {
+const ItemList = ({ items, dummy }) => {
   return (
     <div>
       {items.map((item) => (
@@ -26,7 +26,7 @@ const ItemList = ({ items }) => {
                 Add +
               </button>
             </div>
-            <img src={CDN_URL + item?.card?.info?.imageId} className='w-full' />
+            <img src={CDN_URL + item?.card?.info?.imageId} className="w-full" />
           </div>
         </div>
       ))}

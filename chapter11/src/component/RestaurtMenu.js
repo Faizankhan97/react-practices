@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import useRestrauntMenu from "../utils/useRestrauntMenu";
@@ -8,6 +8,10 @@ const RestaurtMenu = () => {
   const { resId } = useParams();
 
   const resInfo = useRestrauntMenu(resId);
+
+  const dummy = "Dummy Data"
+
+  const [showIndex, setShowIndex] = useState(null)
 
   if (resInfo == null) {
     return <Shimmer />;
@@ -29,8 +33,15 @@ const RestaurtMenu = () => {
       <h3 className="font-bold mb-6">
         {resInfo?.cards[2]?.card?.card?.info?.cuisines.join(", ")}
       </h3>
-      {categories.map((category) => (
-        <RestaurtCategory data={category?.card?.card} />
+      {categories.map((category, index) => (
+        // controlled Component
+        <RestaurtCategory
+          key={category?.card?.card?.title}
+          data={category?.card?.card}
+          showList={index == showIndex ? true : false}
+          setShowIndex={() => setShowIndex(index)}
+          dummy={dummy}
+        />
       ))}
     </div>
   );

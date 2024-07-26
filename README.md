@@ -91,3 +91,5 @@ componentWillUnmount when we are leaving the page
 single responsibility principle that even component sholud have one clear responsibility or role.
 
 Higher Order Component is a function that takes a component and return a new components at the end normal javascript function
+
+uncontrolled component is to control the from useState and controlled component is to control from the parent component
