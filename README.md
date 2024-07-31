@@ -93,3 +93,12 @@ single responsibility principle that even component sholud have one clear respon
 Higher Order Component is a function that takes a component and return a new components at the end normal javascript function
 
 uncontrolled component is to control the from useState and controlled component is to control from the parent component
+
+# Redux Tookit
+- when click on add button it dispatch the action which call a reducer function which updates the slices the redux store
+- Install @reduxjs/tookit and react-redux
+- Build our store
+- Connect our store to our app
+- Slice (cartSlice)
+- dispatch (action)
+- Selector
