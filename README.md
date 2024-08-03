@@ -102,3 +102,12 @@ uncontrolled component is to control the from useState and controlled component 
 - Slice (cartSlice)
 - dispatch (action)
 - Selector
+
+// Wrong: handleClick is called immediately when the component is rendered
+<button onClick={handleClick()}>Click me</button>
+
+// Correct: handleClick is called with item when the button is clicked
+<button onClick={() => handleClick(item)}>Click me</button>
+
+// Correct: handleClick returns a function that is called when the button is clicked
+<button onClick={handleClick(item)}>Click me</button>

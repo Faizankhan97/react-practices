@@ -15,8 +15,7 @@ const Header = () => {
   const { loggedInUser } = useContext(UserContext);
 
   // Subscribing to the store using a Selector
-  const cartItems = useSelector((store) => store?.cart?.items);
-  //console.log(cartItems);
+  const cartItems = useSelector((store) => store?.cart?.item);
 
   return (
     <div className="flex justify-between bg-gray-300">
@@ -39,7 +38,9 @@ const Header = () => {
           <li className="px-4">
             <Link to="/contact">Contact</Link>
           </li>
-          <li className="px-4 font-bold">Cart - ({cartItems?.length} items)</li>
+          <li className="px-4 font-bold">
+            <Link to="/cart">Cart - ({cartItems?.length} items)</Link>
+          </li>
           <li className="px-4">
             <Link to="/grocery">Grocery</Link>
           </li>
