@@ -61,12 +61,7 @@ const Body = () => {
             />
             <button
               className="px-4 py-2 bg-green-100 m-4 rounded-lg"
-              onClick={() => {
-                const filterSearch = listOfRestaurant.filter((res) =>
-                  res.info.name.toLowerCase().includes(search.toLowerCase())
-                );
-                setFilterRestaurant(filterSearch);
-              }}
+              onClick={listOfRestaurant?.filter((res) => res?.info?.name?.toLowerCase()?.includes(search?.toLowerCase()))}
             >
               Search
             </button>

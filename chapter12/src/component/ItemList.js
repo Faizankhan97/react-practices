@@ -25,7 +25,7 @@ const ItemList = ({ items, dummy }) => {
                   item?.card?.info?.defaultPrice / 100}
               </span>
             </div>
-            <p className="text-xs">{item?.card?.info?.ribbon?.text}</p>
+            <p className="text-xs">{item?.card?.info?.category}</p>
           </div>
           <div className="w-3/12 p-4">
             <div className="absolute">

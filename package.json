@@ -13,6 +13,7 @@
   "author": "Faizan khan",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-react": "^7.24.7",
     "parcel": "^2.12.0",
     "process": "^0.11.10"
   },

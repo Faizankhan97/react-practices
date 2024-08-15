@@ -111,3 +111,21 @@ uncontrolled component is to control the from useState and controlled component 
 
 // Correct: handleClick returns a function that is called when the button is clicked
 <button onClick={handleClick(item)}>Click me</button>
+
+# Type of testing (developer)
+- Unit testing
+- Integrstion Testing
+- End to End Testing - e2e testing
+
+# Setting up testing in our app
+- Install React Testing Library
+- Installed jest
+- Install Babel dependencies
+- Configure Babel
+- Configure parcel file to disable default babel transpilation
+- Jsest configuration
+- Jest - npx jest --init
+- Install jsdom library
+- Install @babel/preset-react - to make JSX work i test cases
+- Include @babel/prest-react inside my babel configure
+- Install @testing-library/jest-dom
