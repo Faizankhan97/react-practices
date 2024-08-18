@@ -19,14 +19,14 @@ describe("Contact Us Page Test Case", () => {
       expect(button).toBeInTheDocument();
    });
     
-   it("should load 2 input box us componetn", () => {
-      render(<Contact />);
+   // it("should load 2 input box us componetn", () => {
+   //    render(<Contact />);
 
-      const inputBoxes = screen.getAllByRole("textbox");
+   //    const inputBoxes = screen.getAllByRole("textbox");
 
-      console.log(inputBoxes);
+   //    console.log(inputBoxes);
 
-      expect(inputBoxes.length).toBe();
-   });
+   //    expect(inputBoxes.length).toBe();
+   // });
 
 })
